@@ -1,0 +1,790 @@
+/* General Styling */
+:root {
+    --primary-color: #A2846F; /* Cokelat krem / earthy */
+    --secondary-color: #D4C3B2; /* Krem muda */
+    --text-color: #4A4A4A;
+    --light-text-color: #6C6C6C;
+    --background-light: #FBF9F6; /* Hampir putih */
+    --background-dark: #EAE3DC; /* Krem gelap */
+    --white-color: #FFFFFF;
+    --border-color: #DCDCDC;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background-light);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 4.2em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-size: 2.8em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8C715C; /* Darker primary */
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background-color: #8C715C; /* Darker primary */
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #C1B1A1; /* Darker secondary */
+    color: var(--text-color);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--white-color);
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 35px;
+}
+
+.nav-links a {
+    color: var(--light-text-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('Gemini_Generated_Image_weding_bacground.png'); /* Ganti dengan foto prewedding Anda */
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: var(--white-color);
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}s
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Efek gelap untuk teks lebih jelas */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-tagline {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.hero-date {
+    color: #333333; /* abu gelap agar kontras */
+    font-weight: 500; /* bisa ditambahkan agar lebih jelas */
+}
+
+.hero-main-date {
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+
+.countdown-item {
+    background: rgba(0, 0, 0, 0.5); /* hitam semi transparan */    padding: 15px 25px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #ffffff; /* putih */
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); /* agar tetap terbaca di background warna-warni */
+}
+
+.countdown-item p {
+    margin: 0;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff; /* putih */
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); /* agar tetap terbaca di background warna-warni */
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.story-item {
+    background-color: var(--background-light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-8px);
+}
+
+.story-item img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.story-item p {
+    font-size: 1.05em;
+    color: var(--light-text-color);
+}
+
+.story-summary {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--light-text-color);
+    line-height: 1.8;
+}
+
+/* The Wedding Section */
+.the-wedding-section {
+    background-color: var(--background-dark);
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.event-item {
+    background-color: var(--white-color);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px var(--shadow-color);
+    text-align: center;
+}
+
+.event-item h3 {
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 1.1em;
+    color: var(--light-text-color);
+    margin-bottom: 8px;
+}
+
+.event-item .btn {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.dress-code {
+    font-style: italic;
+    font-size: 0.95em;
+    color: var(--dark-gray);
+    margin-top: 15px;
+}
+
+.note {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--light-text-color);
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-section p {
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: var(--light-text-color);
+}
+
+/* RSVP Section */
+.rsvp-section {
+    background-color: var(--background-dark);
+    text-align: center;
+}
+
+.rsvp-intro {
+    font-size: 1.15em;
+    margin-bottom: 40px;
+    color: var(--light-text-color);
+}
+
+.rsvp-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(162, 132, 111, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.rsvp-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.form-message {
+    margin-top: 20px;
+    font-weight: 600;
+    color: green; /* Default success color */
+}
+
+/* Gift Registry Section */
+.gift-registry-section {
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.gifts-intro {
+    font-size: 1.15em;
+    margin-bottom: 40px;
+    color: var(--light-text-color);
+}
+
+.gift-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.gift-item {
+    background-color: var(--white-color);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px var(--shadow-color);
+    text-align: center;
+}
+
+.gift-icon {
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.gift-item p {
+    font-size: 1.05em;
+    color: var(--light-text-color);
+    margin-bottom: 10px;
+}
+
+.gift-item strong {
+    color: var(--primary-color);
+}
+
+.doa-form {
+    margin-top: 25px;
+}
+
+.doa-form textarea {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.doa-form button {
+    padding: 10px 25px;
+    font-size: 1em;
+}
+
+.final-note {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--light-text-color);
+}
+
+/* Q&A Section */
+.qna-section {
+    background-color: var(--background-dark);
+    text-align: center;
+}
+
+.qna-list {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+}
+
+.qna-item {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    text-align: left;
+}
+
+.qna-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: left; /* Override global h3 center */
+}
+
+.qna-item p {
+    color: var(--light-text-color);
+    font-size: 1.05em;
+}
+
+/* Contact Section */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #c4a484; /* fallback bg */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-section {
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 1.15em;
+    margin-bottom: 40px;
+    color: var(--light-text-color);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: var(--white-color);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px var(--shadow-color);
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 4em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.contact-card p {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.contact-card a {
+    font-weight: 600;
+}
+
+.contact-closing {
+    margin-top: 60px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--light-text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens for simplicity. Can add hamburger menu */
+    }
+
+    .hero-content h1 {
+        font-size: 3.2em;
+    }
+
+    .hero-main-date {
+        font-size: 2.2em;
+        
+    }
+
+    .countdown-item span {
+        font-size: 2.2em;
+    }
+
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content, .hero-image {
+        padding-right: 0;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-main-date {
+        font-size: 1.8em;
+        
+    }
+
+    .countdown-item span {
+        font-size: 1.8em;
+    }
+    .countdown-item p {
+        font-size: 0.75em;
+    }
+
+    .story-item, .event-item, .gift-item, .contact-card, .rsvp-form {
+        padding: 25px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr; /* Stack images on small screens */
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-main-date {
+        font-size: 1.5em;
+    }
+    .countdown-item {
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    .countdown-item span {
+        font-size: 1.5em;
+    }
+    .countdown {
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .story-grid, .event-grid, .gift-options, .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header .logo {
+        font-size: 1.5em;
+    }
+}
