@@ -1,14 +1,22 @@
-🎉 Undangan Pernikahan - [Nama Pasangan]
-Tampilan elegan dari undangan pernikahan online. Dibuat dengan HTML + CSS + JS, tanpa backend, mudah dimodifikasi, cocok untuk dibagikan ke tamu secara online!
+💒 Wedding Invitation - Undangan Pernikahan Digital
 
-💖 Fitur Utama
-📱 Responsif: Tampilan optimal laptop
-💍 Desain bersih & romantis: Warna pastel, font kaligrafi
-⏳ Hitung Mundur ke Hari H
-📍 Peta Lokasi menggunakan Google Maps
-📸 Galeri Foto
+Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunakan HTML + CSS + JS tanpa database, cocok untuk dibagikan ke tamu secara online maupun untuk eksplorasi desain frontend!
 
-🖼️ Demo Tampilan
+---
+
+🚀 Fitur Utama
+
+- Responsif di semua perangkat
+- Desain romantis dan modern
+- Tanpa database (statik)
+- Musik latar dan hitung mundur hari H
+- Galeri foto & peta lokasi
+- Mudah untuk dikembangkan dan dikostumisasi
+
+---
+
+📸 Demo Tampilan  
+[Klik untuk melihat demo](https://example.com)
 <img width="1891" height="878" alt="Screenshot 2025-07-26 140850" src="https://github.com/user-attachments/assets/0f8b4b24-a3d0-4274-80a8-711d6235010f" />
 <img width="1880" height="621" alt="Screenshot 2025-07-26 141353" src="https://github.com/user-attachments/assets/03b648c1-fe7f-484f-9359-6b3bd9eb9e22" />
 <img width="1877" height="726" alt="Screenshot 2025-07-26 141343" src="https://github.com/user-attachments/assets/0b37c834-87ae-4c1b-a1f3-428d2f0b410e" />
