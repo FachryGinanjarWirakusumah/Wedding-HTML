@@ -6,10 +6,10 @@ Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunak
 
 🚀 Fitur Utama
 
-- Responsif di semua perangkat
+- Responsif
 - Desain romantis dan modern
 - Tanpa database (statik)
-- Musik latar dan hitung mundur hari H
+- waktu hitung mundur hari H
 - Galeri foto & peta lokasi
 - Mudah untuk dikembangkan dan dikostumisasi
 
