@@ -18,8 +18,7 @@ Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunak
 📸 Demo Tampilan  
 
 ---
-
-<img width="1891" height="878" alt="Screenshot 2025-07-26 140850" src="https://github.com/user-attachments/assets/0f8b4b24-a3d0-4274-80a8-711d6235010f" />
+<img width="1888" height="870" alt="image" src="https://github.com/user-attachments/assets/6e639a5a-817a-410a-ac34-ed54baf51bb5" />
 <img width="1883" height="727" alt="Screenshot 2025-07-26 140921" src="https://github.com/user-attachments/assets/b6f2d36d-6e12-4ef1-96ab-9aa31390e968" />
 <img width="1880" height="726" alt="Screenshot 2025-07-26 140951" src="https://github.com/user-attachments/assets/afb79d6c-4609-404a-a7e3-6763aecd1bb8" />
 <img width="1879" height="725" alt="Screenshot 2025-07-26 141009" src="https://github.com/user-attachments/assets/6247c457-c4e1-4396-b7a2-3d2dd0d35c17" />
