@@ -1,6 +1,6 @@
 💒 Wedding Invitation - Undangan Pernikahan Digital
 
-Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunakan HTML + CSS + JS tanpa database, cocok untuk dibagikan ke tamu secara online maupun untuk eksplorasi desain frontend!
+Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunakan HTML + CSS + JS tanpa database, cocok untuk dibagikan ke tamu secara online maupun untuk eksplorasi desain frontend
 
 ---
 
