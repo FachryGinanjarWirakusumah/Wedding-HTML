@@ -19,8 +19,6 @@ Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunak
 
 ---
 
-🧩 Bagian 1 - Header dan Navigasi
-
 <img width="1891" height="878" alt="Screenshot 2025-07-26 140850" src="https://github.com/user-attachments/assets/0f8b4b24-a3d0-4274-80a8-711d6235010f" />
 <img width="1883" height="727" alt="Screenshot 2025-07-26 140921" src="https://github.com/user-attachments/assets/b6f2d36d-6e12-4ef1-96ab-9aa31390e968" />
 <img width="1880" height="726" alt="Screenshot 2025-07-26 140951" src="https://github.com/user-attachments/assets/afb79d6c-4609-404a-a7e3-6763aecd1bb8" />
@@ -37,3 +35,22 @@ Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunak
 <img width="1886" height="723" alt="Screenshot 2025-07-26 141314" src="https://github.com/user-attachments/assets/79947b7d-1785-4b2c-b50e-9dee43870dee" />
 <img width="1877" height="726" alt="Screenshot 2025-07-26 141343" src="https://github.com/user-attachments/assets/0b37c834-87ae-4c1b-a1f3-428d2f0b410e" />
 <img width="1880" height="621" alt="Screenshot 2025-07-26 141353" src="https://github.com/user-attachments/assets/03b648c1-fe7f-484f-9359-6b3bd9eb9e22" />
+
+---
+
+🧩 Bagian 1 - Header dan Navigasi
+🧩 Bagian 2 - Hero Section
+🧩 Bagian 3 - Detail Acara
+🧩 Bagian 4 - Galeri
+🧩 Bagian 5 - Ucapan & Doa
+🧩 Bagian 6 - Footer
+
+---
+
+📌 Catatan  
+Website undangan ini bersifat statis dan tidak menggunakan backend.  
+Jika ingin menambahkan fitur seperti konfirmasi kehadiran otomatis atau komentar real-time, maka diperlukan integrasi backend dan database.
+
+💖 Dibuat oleh  
+Fachry Ginanjar Wirakusumah – sebagai bentuk dokumentasi cinta, belajar frontend, dan berbagi kebahagiaan! 💍
+
