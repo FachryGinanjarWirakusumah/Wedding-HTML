@@ -39,18 +39,23 @@ Tampilan sederhana dan elegan dari undangan pernikahan digital. Dibuat menggunak
 ---
 
 🧩 Bagian 1 - Header dan Navigasi
-🧩 Bagian 2 - Hero Section
-🧩 Bagian 3 - Detail Acara
-🧩 Bagian 4 - Galeri
-🧩 Bagian 5 - Ucapan & Doa
-🧩 Bagian 6 - Footer
 
----
+🧩 Bagian 2 - Hero Section
+
+🧩 Bagian 3 - Detail Acara
+
+🧩 Bagian 4 - Galeri
+
+🧩 Bagian 5 - Ucapan & Doa
+
+🧩 Bagian 6 - Footer
 
 📌 Catatan  
 Website undangan ini bersifat statis dan tidak menggunakan backend.  
 Jika ingin menambahkan fitur seperti konfirmasi kehadiran otomatis atau komentar real-time, maka diperlukan integrasi backend dan database.
+Untuk bagian *Galeri*, perlu disesuaikan kembali ukuran dan kotaknya agar tampil lebih maksimal di berbagai perangkat.
+Tidak hanya itu, saat ini tampilan baru disesuaikan untuk *laptop*, sehingga masih perlu penyesuaian lebih lanjut agar optimal juga di **tablet dan handphone**.
 
-💖 Dibuat oleh  
-Fachry Ginanjar Wirakusumah – sebagai bentuk dokumentasi cinta, belajar frontend, dan berbagi kebahagiaan! 💍
+📌 Dibuat oleh  
+Fachry Ginanjar Wirakusumah – Bantuan AI, belajar, dan berbagi kebahagiaan 💍
 
